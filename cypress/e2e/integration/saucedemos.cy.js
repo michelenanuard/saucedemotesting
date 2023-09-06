@@ -5,7 +5,7 @@ describe('Login', () => {
     cy.clearLocalStorage();
 
     // Visita la página y realiza el inicio de sesión
-    cy.visit('https://www.saucedemo.com');
+    cy.visit('http://www.saucedemo.com');
     cy.get('#user-name').type('standard_user');
     cy.get('#password').type('secret_sauce');
     cy.get('#login-button').click();
